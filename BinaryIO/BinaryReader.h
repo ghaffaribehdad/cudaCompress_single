@@ -13,11 +13,13 @@ private:
 	std::string m_filePath;
 	std::vector<char> m_vec_buffer;
 
-	// fill a stream of characters into buffer
-	void read(std::vector<char>* p_vec_buffer);
+
 
 public:
 	BinaryReader();
+
+	// fill a stream of characters into buffer
+	bool read();
 
 	//clean buffer vector
 	void clean_buffer();
@@ -39,9 +41,6 @@ public:
 	void setfilePath(const char* _filePath);
 
 	void setVecBuffer(const std::vector<char>* _vec_buffer);
-
-	// read file and store it in the buffer;
-	std::vector<char>* readFile();
 
 	// return a pointer to the buffer 
 	std::vector<char>* flush_buffer();

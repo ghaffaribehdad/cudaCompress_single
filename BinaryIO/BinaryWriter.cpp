@@ -75,7 +75,7 @@ BinaryWriter::BinaryWriter(const char* _fileName) {
 }
 //################################################//
 
-void BinaryWriter::write()
+bool BinaryWriter::write()
 {
 	// define the istream
 	std::ofstream myFile;
@@ -83,7 +83,8 @@ void BinaryWriter::write()
 	myFile = std::ofstream(m_filePath + m_fileName, std::ios::binary);
 
 	// check whether the file is open
-	assert(myFile.is_open());
+	if (!myFile.is_open())
+		return false;
 
 	// write into the file
 	myFile.write(&(this->m_buffer[0]), this->m_buffer_size);
@@ -91,4 +92,5 @@ void BinaryWriter::write()
 	// close the file
 	myFile.close();
 
+	return true;
 }

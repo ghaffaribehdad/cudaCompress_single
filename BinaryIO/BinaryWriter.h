@@ -40,7 +40,7 @@ public:
 	void setBufferSize(std::size_t _buffer_size);
 
 
-	void write();
+	bool write();
 
 
 

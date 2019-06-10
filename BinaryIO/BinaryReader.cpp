@@ -2,7 +2,6 @@
 #include "BinaryReader.h"
 #include <fstream>
 #include <filesystem>
-#include <cassert>
 
 // define fs namespace for convenience
 namespace fs = std::experimental::filesystem;
@@ -56,7 +55,7 @@ void BinaryReader::setfilePath(const char* _filePath)
 
 
 
-void BinaryReader::read(std::vector<char>* p_vec_buffer) 
+bool BinaryReader::read() 
 {
 	// define the istream
 	std::ifstream myFile;
@@ -65,7 +64,8 @@ void BinaryReader::read(std::vector<char>* p_vec_buffer)
 	myFile = std::ifstream(fullPath, std::ios::binary);
 
 	// check whether the file is open
-	assert(myFile.is_open());
+	if (!myFile.is_open())
+		return false;
 
 	// get the starting position
 	std::streampos start = myFile.tellg();
@@ -83,23 +83,17 @@ void BinaryReader::read(std::vector<char>* p_vec_buffer)
 	const int buffer_size = static_cast<int>(end - start);
 
 	// resize it to fit the dataset(MUST BE EDITED WHILE IT IS ABOVE THE RAM SIZE)
-	(*p_vec_buffer).resize(buffer_size);
+	this->m_vec_buffer.resize(buffer_size);
 
 	//read file and store it into buffer 
-	myFile.read(&(p_vec_buffer->at(0)), buffer_size);
+	myFile.read(&(m_vec_buffer.at(0)), buffer_size);
 
 	// close the file
 	myFile.close();
+
+	return true;
 }
 
-
-
-std::vector<char>* BinaryReader::readFile()
-{
-	read(&(this->m_vec_buffer));
-	std::vector<char>* buffer = this->flush_buffer();
-	return buffer;
-}
 
 std::vector<char>* BinaryReader::flush_buffer() 
 {
