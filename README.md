@@ -1,5 +1,6 @@
-# Padding
-Add 4th dimension to a 3D velocity field in binary format which makes it usable for the CUDA/DirectX texture memory
+# cudaCompress_single
+A tool to compress volumetric data using CUDA Toolkit.
+It provides a lossy GPU-based compression scheme using a combination of the discrete wavelet transform, coefficient quantization, and Huffman coding. 
 
-You need boost library to build this project: 
-https://www.boost.org/
+
+This repo includes Boost library with Boost Software License - Version 1.0 - August 17th, 2003.
