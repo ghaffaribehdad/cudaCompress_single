@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ffc4a3b2-cacd-497c-8883-9a23e703b479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress">
+      <UniqueIdentifier>{882eff3d-3e29-45ae-bbb0-8ec062bfaa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\profiler">
+      <UniqueIdentifier>{9eca919a-077c-40cc-a1e9-b0b763a5a9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\reduce">
+      <UniqueIdentifier>{45833e30-381e-425b-a193-c3b5ebc3dffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\scan">
+      <UniqueIdentifier>{169c73a0-d4f1-4a81-bb14-2ce3424dcc3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\tools">
+      <UniqueIdentifier>{878fbd84-a99c-4257-9619-0803a37b80d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\util">
+      <UniqueIdentifier>{ea9511e5-029d-4c31-8df1-72e16311c2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cudaCompress\tthread">
+      <UniqueIdentifier>{3a5d44a4-a0fb-4378-84cc-3ddf71b9af77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{62c709a1-73b1-484e-877d-0943266e0d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5a7867be-6b54-4895-a3bf-b496496fa6dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9f9fb17f-9db0-48c5-8a84-3abbb78c22cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BinaryIO\BinaryReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BinaryIO\BinaryWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\CompressHeightfield.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\CompressImage.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\CompressVolume.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\cudaUtil.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\examples.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\global.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\GPUResources.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\profiler\profiler.hpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\profiler\profilerlogwriter.hpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\profiler\profilerstreamwriter.hpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\reduce\reduce_globals.h">
+      <Filter>cudaCompress\reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\reduce\reduce_plan.h">
+      <Filter>cudaCompress\reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\scan\scan_globals.h">
+      <Filter>cudaCompress\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\scan\scan_plan.h">
+      <Filter>cudaCompress\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\tools\Functor.h">
+      <Filter>cudaCompress\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\tools\Operator.h">
+      <Filter>cudaCompress\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\tthread\tinythread.h">
+      <Filter>cudaCompress\tthread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\BitStream.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\cudaUtil.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\Encode.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\EncodeCommon.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\global.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\Histogram.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\Huffman.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\HuffmanDesign.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\HuffmanTable.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\Instance.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\InstanceImpl.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\PackInc.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\RunLength.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\Timing.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\cudaCompress\util.h">
+      <Filter>cudaCompress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\util\Bits.h">
+      <Filter>cudaCompress\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\util\CudaTimer.h">
+      <Filter>cudaCompress\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\util\DWT.h">
+      <Filter>cudaCompress\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\util\Quantize.h">
+      <Filter>cudaCompress\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\include\cudaCompress\util\YCoCg.h">
+      <Filter>cudaCompress\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\tools\entropy.h">
+      <Filter>cudaCompress\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\tools\imgtools.h">
+      <Filter>cudaCompress\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cudaCompress\src\examples\tools\rawfile.h">
+      <Filter>cudaCompress\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="compression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cudaCompress\src\examples\simpleExample.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\CompressHeightfield.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\CompressImage.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\CompressVolume.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\examples.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\GPUResources.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\profiler\profiler.cpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\profiler\profilerlogwriter.cpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\profiler\profilerstreamwriter.cpp">
+      <Filter>cudaCompress\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\reduce\reduce_plan.cpp">
+      <Filter>cudaCompress\reduce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\scan\scan_plan.cpp">
+      <Filter>cudaCompress\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\tthread\tinythread.cpp">
+      <Filter>cudaCompress\tthread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\Encode.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\Instance.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\InstanceImpl.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\Timing.cpp">
+      <Filter>cudaCompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryIO\BinaryReader.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BinaryIO\BinaryWriter.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\cudaCompress\util\CudaTimer.cpp">
+      <Filter>cudaCompress\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cudaCompress\src\examples\tools\rawfile.cpp">
+      <Filter>cudaCompress\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\cudaCompress\src\cudaCompress\reduce\reduce_app.cui">
+      <Filter>cudaCompress\reduce</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\reduce\reduce_kernel.cui">
+      <Filter>cudaCompress\reduce</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\scan\scan_app.cui">
+      <Filter>cudaCompress\scan</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\scan\scan_cta.cui">
+      <Filter>cudaCompress\scan</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\scan\scan_kernel.cui">
+      <Filter>cudaCompress\scan</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\scan\vector_kernel.cui">
+      <Filter>cudaCompress\scan</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\BitStreamGPU.cuh">
+      <Filter>cudaCompress</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\HistogramKernels.cui">
+      <Filter>cudaCompress</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\HuffmanKernels.cui">
+      <Filter>cudaCompress</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\RunLengthKernels.cui">
+      <Filter>cudaCompress</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTCommon.cuh">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTFloat2DLowpassKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTFloatFilters.cuh">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTFloatFromSymbolsKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTFloatKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTInt2DLowpassKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\DWTIntKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\Quantize.cuh">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+    <None Include="..\cudaCompress\src\cudaCompress\util\QuantizeKernels.cui">
+      <Filter>cudaCompress\util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\Histogram.cu">
+      <Filter>cudaCompress</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\Huffman.cu">
+      <Filter>cudaCompress</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\HuffmanTable.cu">
+      <Filter>cudaCompress</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\PackInc.cu">
+      <Filter>cudaCompress</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\RunLength.cu">
+      <Filter>cudaCompress</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\util\Bits.cu">
+      <Filter>cudaCompress\util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\util\DWTFloat.cu">
+      <Filter>cudaCompress\util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\util\DWTInt.cu">
+      <Filter>cudaCompress\util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\util\Quantize.cu">
+      <Filter>cudaCompress\util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\cudaCompress\src\cudaCompress\util\YCoCg.cu">
+      <Filter>cudaCompress\util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="compression.cu" />
+  </ItemGroup>
+</Project>
